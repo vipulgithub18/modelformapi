@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .forms import StudentRegister
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect,HttpResponse
 from .models import Useradmin
 # Create your views here.
 
@@ -24,3 +24,5 @@ def ShowData(request):
     else:
         fm = StudentRegister()
     return render(request,'enroll/show.html',{'form':fm})
+def About(request):
+    return HttpResponse("<h2> this is MY about page</h2>")
