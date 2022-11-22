@@ -25,4 +25,5 @@ def ShowData(request):
         fm = StudentRegister()
     return render(request,'enroll/show.html',{'form':fm})
 def About(request):
-    return HttpResponse("<h2> this is MY about page</h2>")
+    # return HttpResponse("<h2> this is MY about page</h2>")
+    return HttpResponse("<h2> This is MY about page</h2>")
